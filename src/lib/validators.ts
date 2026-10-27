@@ -1,0 +1,1 @@
+import {z} from 'zod';export const customRuleSchema=z.object({id:z.string().min(1),text:z.string().trim().min(1,'Custom rules cannot be empty.')});export const mcpServerSchema=z.object({name:z.string(),command:z.string(),args:z.string(),envNames:z.string()});export const globSchema=z.string().trim().min(1,'Provide a glob pattern.');
